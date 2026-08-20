@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navigation/navbar";
 import { FooterCTA } from "@/components/sections/footer-cta";
 import { FooterCTASlot } from "@/components/sections/footer-cta-slot";
 import { Footer } from "@/components/layout/footer";
+import { ChatWidget } from "@/components/chatbot/chat-widget";
 
 /**
  * Site-wide shell: skip link, Navbar, main, FooterCTA invitation, Footer. Used
@@ -23,6 +24,7 @@ export function MarketingShell({ children }: { children: React.ReactNode }) {
         <FooterCTA />
       </FooterCTASlot>
       <Footer />
+      <ChatWidget />
     </>
   );
 }
